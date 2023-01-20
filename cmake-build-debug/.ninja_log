@@ -1,0 +1,7 @@
+# ninja log v5
+1	572	6958628302605627	CMakeFiles/graphics.dir/SDL/SDL_framerate.c.obj	45715b8808398d78
+35	579	6958628302867934	CMakeFiles/graphics.dir/SDL/SDL_imageFilter.c.obj	dd2b5fdbed380885
+2	693	6959567206454461	CMakeFiles/graphics.dir/main.c.obj	99b7fba26ed0bcb6
+26	577	6958628302779654	CMakeFiles/graphics.dir/SDL/SDL_gfxPrimitives.c.obj	f862bcf0dd313c85
+17	807	6958628305323737	CMakeFiles/graphics.dir/SDL/SDL_rotozoom.c.obj	b8e6321f28f74cc0
+694	993	6959567208880769	graphics.exe	babd0f3c4952bf6d
