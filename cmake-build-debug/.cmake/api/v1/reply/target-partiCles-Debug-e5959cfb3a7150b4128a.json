@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "graphics.exe"
+			"path" : "partiCles.exe"
 		},
 		{
-			"path" : "graphics.pdb"
+			"path" : "partiCles.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -67,7 +67,7 @@
 			]
 		}
 	],
-	"id" : "graphics::@6890427a1f51a3e7e1df",
+	"id" : "partiCles::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -112,8 +112,8 @@
 		],
 		"language" : "C"
 	},
-	"name" : "graphics",
-	"nameOnDisk" : "graphics.exe",
+	"name" : "partiCles",
+	"nameOnDisk" : "partiCles.exe",
 	"paths" : 
 	{
 		"build" : ".",

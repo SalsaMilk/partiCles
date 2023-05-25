@@ -38,9 +38,9 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "graphics::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-graphics-Debug-d4a4a6b0f51d397dea2e.json",
-					"name" : "graphics",
+					"id" : "partiCles::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-partiCles-Debug-e5959cfb3a7150b4128a.json",
+					"name" : "partiCles",
 					"projectIndex" : 0
 				}
 			]

@@ -8,8 +8,8 @@ file(GLOB SOURCE
         SDL/*.c
         )
 
-add_executable(graphics ${SOURCE} vector.h)
+add_executable(partiCles ${SOURCE} vector.h)
 
 file(GLOB LIBS lib/*.lib)
 
-target_link_libraries(graphics ${LIBS})
+target_link_libraries(partiCles ${LIBS})

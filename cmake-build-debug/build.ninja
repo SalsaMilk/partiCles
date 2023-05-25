@@ -40,6 +40,70 @@ include CMakeFiles\rules.ninja
 # Logical path to working directory; prefix for absolute paths.
 
 cmake_ninja_workdir = C$:\Users\mitch\CLionProjects\partiCles\cmake-build-debug\
+# =============================================================================
+# Object build statements for EXECUTABLE target partiCles
+
+
+#############################################
+# Order-only phony target for partiCles
+
+build cmake_object_order_depends_target_partiCles: phony || CMakeFiles\partiCles.dir
+
+build CMakeFiles\partiCles.dir\SDL\SDL_framerate.c.obj: C_COMPILER__partiCles_Debug C$:\Users\mitch\CLionProjects\partiCles\SDL\SDL_framerate.c || cmake_object_order_depends_target_partiCles
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\partiCles.dir
+  OBJECT_FILE_DIR = CMakeFiles\partiCles.dir\SDL
+  TARGET_COMPILE_PDB = CMakeFiles\partiCles.dir\
+  TARGET_PDB = partiCles.pdb
+
+build CMakeFiles\partiCles.dir\SDL\SDL_gfxPrimitives.c.obj: C_COMPILER__partiCles_Debug C$:\Users\mitch\CLionProjects\partiCles\SDL\SDL_gfxPrimitives.c || cmake_object_order_depends_target_partiCles
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\partiCles.dir
+  OBJECT_FILE_DIR = CMakeFiles\partiCles.dir\SDL
+  TARGET_COMPILE_PDB = CMakeFiles\partiCles.dir\
+  TARGET_PDB = partiCles.pdb
+
+build CMakeFiles\partiCles.dir\SDL\SDL_imageFilter.c.obj: C_COMPILER__partiCles_Debug C$:\Users\mitch\CLionProjects\partiCles\SDL\SDL_imageFilter.c || cmake_object_order_depends_target_partiCles
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\partiCles.dir
+  OBJECT_FILE_DIR = CMakeFiles\partiCles.dir\SDL
+  TARGET_COMPILE_PDB = CMakeFiles\partiCles.dir\
+  TARGET_PDB = partiCles.pdb
+
+build CMakeFiles\partiCles.dir\SDL\SDL_rotozoom.c.obj: C_COMPILER__partiCles_Debug C$:\Users\mitch\CLionProjects\partiCles\SDL\SDL_rotozoom.c || cmake_object_order_depends_target_partiCles
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\partiCles.dir
+  OBJECT_FILE_DIR = CMakeFiles\partiCles.dir\SDL
+  TARGET_COMPILE_PDB = CMakeFiles\partiCles.dir\
+  TARGET_PDB = partiCles.pdb
+
+build CMakeFiles\partiCles.dir\main.c.obj: C_COMPILER__partiCles_Debug C$:\Users\mitch\CLionProjects\partiCles\main.c || cmake_object_order_depends_target_partiCles
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  OBJECT_DIR = CMakeFiles\partiCles.dir
+  OBJECT_FILE_DIR = CMakeFiles\partiCles.dir
+  TARGET_COMPILE_PDB = CMakeFiles\partiCles.dir\
+  TARGET_PDB = partiCles.pdb
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target partiCles
+
+
+#############################################
+# Link the executable partiCles.exe
+
+build partiCles.exe: C_EXECUTABLE_LINKER__partiCles_Debug CMakeFiles\partiCles.dir\SDL\SDL_framerate.c.obj CMakeFiles\partiCles.dir\SDL\SDL_gfxPrimitives.c.obj CMakeFiles\partiCles.dir\SDL\SDL_imageFilter.c.obj CMakeFiles\partiCles.dir\SDL\SDL_rotozoom.c.obj CMakeFiles\partiCles.dir\main.c.obj | ..\lib\SDL2.lib ..\lib\SDL2_image.lib ..\lib\SDL2_ttf.lib ..\lib\SDL2main.lib ..\lib\SDL2test.lib
+  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
+  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
+  LINK_LIBRARIES = ..\lib\SDL2.lib  ..\lib\SDL2_image.lib  ..\lib\SDL2_ttf.lib  ..\lib\SDL2main.lib  ..\lib\SDL2test.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
+  OBJECT_DIR = CMakeFiles\partiCles.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  TARGET_COMPILE_PDB = CMakeFiles\partiCles.dir\
+  TARGET_FILE = partiCles.exe
+  TARGET_IMPLIB = partiCles.lib
+  TARGET_PDB = partiCles.pdb
+
 
 #############################################
 # Utility command for edit_cache
@@ -50,70 +114,6 @@ build CMakeFiles\edit_cache.util: CUSTOM_COMMAND
   restat = 1
 
 build edit_cache: phony CMakeFiles\edit_cache.util
-
-# =============================================================================
-# Object build statements for EXECUTABLE target graphics
-
-
-#############################################
-# Order-only phony target for graphics
-
-build cmake_object_order_depends_target_graphics: phony || CMakeFiles\graphics.dir
-
-build CMakeFiles\graphics.dir\SDL\SDL_framerate.c.obj: C_COMPILER__graphics_Debug C$:\Users\mitch\CLionProjects\partiCles\SDL\SDL_framerate.c || cmake_object_order_depends_target_graphics
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\graphics.dir
-  OBJECT_FILE_DIR = CMakeFiles\graphics.dir\SDL
-  TARGET_COMPILE_PDB = CMakeFiles\graphics.dir\
-  TARGET_PDB = graphics.pdb
-
-build CMakeFiles\graphics.dir\SDL\SDL_gfxPrimitives.c.obj: C_COMPILER__graphics_Debug C$:\Users\mitch\CLionProjects\partiCles\SDL\SDL_gfxPrimitives.c || cmake_object_order_depends_target_graphics
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\graphics.dir
-  OBJECT_FILE_DIR = CMakeFiles\graphics.dir\SDL
-  TARGET_COMPILE_PDB = CMakeFiles\graphics.dir\
-  TARGET_PDB = graphics.pdb
-
-build CMakeFiles\graphics.dir\SDL\SDL_imageFilter.c.obj: C_COMPILER__graphics_Debug C$:\Users\mitch\CLionProjects\partiCles\SDL\SDL_imageFilter.c || cmake_object_order_depends_target_graphics
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\graphics.dir
-  OBJECT_FILE_DIR = CMakeFiles\graphics.dir\SDL
-  TARGET_COMPILE_PDB = CMakeFiles\graphics.dir\
-  TARGET_PDB = graphics.pdb
-
-build CMakeFiles\graphics.dir\SDL\SDL_rotozoom.c.obj: C_COMPILER__graphics_Debug C$:\Users\mitch\CLionProjects\partiCles\SDL\SDL_rotozoom.c || cmake_object_order_depends_target_graphics
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\graphics.dir
-  OBJECT_FILE_DIR = CMakeFiles\graphics.dir\SDL
-  TARGET_COMPILE_PDB = CMakeFiles\graphics.dir\
-  TARGET_PDB = graphics.pdb
-
-build CMakeFiles\graphics.dir\main.c.obj: C_COMPILER__graphics_Debug C$:\Users\mitch\CLionProjects\partiCles\main.c || cmake_object_order_depends_target_graphics
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
-  OBJECT_DIR = CMakeFiles\graphics.dir
-  OBJECT_FILE_DIR = CMakeFiles\graphics.dir
-  TARGET_COMPILE_PDB = CMakeFiles\graphics.dir\
-  TARGET_PDB = graphics.pdb
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target graphics
-
-
-#############################################
-# Link the executable graphics.exe
-
-build graphics.exe: C_EXECUTABLE_LINKER__graphics_Debug CMakeFiles\graphics.dir\SDL\SDL_framerate.c.obj CMakeFiles\graphics.dir\SDL\SDL_gfxPrimitives.c.obj CMakeFiles\graphics.dir\SDL\SDL_imageFilter.c.obj CMakeFiles\graphics.dir\SDL\SDL_rotozoom.c.obj CMakeFiles\graphics.dir\main.c.obj | ..\lib\SDL2.lib ..\lib\SDL2_image.lib ..\lib\SDL2_ttf.lib ..\lib\SDL2main.lib ..\lib\SDL2test.lib
-  FLAGS = /DWIN32 /D_WINDOWS /Zi /Ob0 /Od /RTC1 -MDd
-  LINK_FLAGS = /machine:x64 /debug /INCREMENTAL /subsystem:console
-  LINK_LIBRARIES = ..\lib\SDL2.lib  ..\lib\SDL2_image.lib  ..\lib\SDL2_ttf.lib  ..\lib\SDL2main.lib  ..\lib\SDL2test.lib  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib
-  OBJECT_DIR = CMakeFiles\graphics.dir
-  POST_BUILD = cd .
-  PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\graphics.dir\
-  TARGET_FILE = graphics.exe
-  TARGET_IMPLIB = graphics.lib
-  TARGET_PDB = graphics.pdb
 
 
 #############################################
@@ -130,7 +130,7 @@ build rebuild_cache: phony CMakeFiles\rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build graphics: phony graphics.exe
+build partiCles: phony partiCles.exe
 
 # =============================================================================
 # Folder targets.
@@ -140,7 +140,7 @@ build graphics: phony graphics.exe
 #############################################
 # Folder: C:/Users/mitch/CLionProjects/partiCles/cmake-build-debug
 
-build all: phony graphics.exe
+build all: phony partiCles.exe
 
 # =============================================================================
 # Built-in targets
