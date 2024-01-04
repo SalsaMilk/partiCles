@@ -1,0 +1,1 @@
+/usr/bin/cc  -lSDL2 -lSDL2_gfx -g CMakeFiles/partiCles.dir/main.c.o -o partiCles  -lm 

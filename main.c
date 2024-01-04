@@ -1,10 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <windows.h>
 
-#include "SDL/SDL.h"
-#include "SDL/SDL_gfxPrimitives.h"
+#include <SDL2/SDL.h>
+#include <SDL2/SDL_gfxPrimitives.h>
 
 #include "vector.h"
 
@@ -16,20 +15,9 @@
 
 #define WIDTH 400
 #define HEIGHT 300
-#define COUNT 500
+#define COUNT 30000
 #define GRID_SIZE 20 // Size of a grid square for computations
-#define G 15 // Universal gravitational constant for this simulation
-
-SDL_Point GetLocalCursorPos(SDL_Window* window) {
-    POINT cursorPos;
-    GetCursorPos(&cursorPos);
-
-    SDL_Point windowPos;
-    SDL_GetWindowPosition(window, &windowPos.x, &windowPos.y);
-
-    SDL_Point ret = {cursorPos.x-windowPos.x, cursorPos.y-windowPos.y};
-    return ret;
-}
+#define G 12 // Universal gravitational constant for this simulation
 
 typedef struct {
     Vector pos, velocity;
@@ -71,7 +59,8 @@ int main(int argc, char* argv[]) {
                     running = 0;
                     break;
                 case SDL_MOUSEBUTTONDOWN:
-                    SDL_Point cursorPos = GetLocalCursorPos(window);
+                    SDL_Point cursorPos;
+                    SDL_GetMouseState(&cursorPos.x, &cursorPos.y);
                     blackHole.x = cursorPos.x;
                     blackHole.y = cursorPos.y;
                     break;
@@ -102,12 +91,12 @@ int main(int argc, char* argv[]) {
 
             P.pos.x += P.velocity.x;
             P.pos.y += P.velocity.y;
-
+/*
             if (P.pos.x < 0 || P.pos.x > 400)
                 P.velocity.x = -P.velocity.x;
             if (P.pos.y < 0 || P.pos.y > 300)
                 P.velocity.y = -P.velocity.y;
-
+*/
             SDL_RenderDrawPointF(ren, P.pos.x, P.pos.y);
         }
 
